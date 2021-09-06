@@ -1,0 +1,22 @@
+a {
+    text-decoration: none;
+    color: darkorange;
+}
+
+.header {
+    margin-right: 2%;
+    text-align: left;
+}
+
+.spanHeader {
+    font-size: 25px;
+}
+
+.hText {
+    font: 50px "Russo One";
+}
+
+.homeImg {
+    width: 45px;
+
+}
