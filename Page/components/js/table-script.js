@@ -6,7 +6,7 @@ const lesson = (title, photo, trainer, data) => {
     }
 
     function generateData() {
-        const hour = getRandom(0, 23)
+        const hour = getRandom(7, 21)
         const time = getRandom(0, 59)
         const day = getRandom(10, 28)
         const month = getRandom(9, 12)

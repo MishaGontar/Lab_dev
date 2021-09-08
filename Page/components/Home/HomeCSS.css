@@ -15,8 +15,13 @@ a {
 .hText {
     font-size: 50px
 }
-
+.h2Text{
+    font-size: 40px;
+}
 .homeImg {
     width: 45px;
 
+}
+.text{
+    font-size: 25px;
 }
