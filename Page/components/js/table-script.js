@@ -1,22 +1,24 @@
-const lesson = (title, photo, trainer) => {
+const lesson = (title, photo, trainer, data) => {
     function getRandom(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min + 1)) + min; // max & min both included
     }
-    function generateData(){
-        const hour = getRandom(0,23)
-        const time = getRandom(0,59)
-        const day = getRandom(10,28)
-        const month = getRandom(9,12)
 
-        return `час: ${(hour<10)?`0${hour}`: hour}:${(time<10)?`0${time}`: time} 
-                дата:${(day<10)?`0${day}`: day}.${(month<10)?`0${month}`: month}.2021`
+    function generateData() {
+        const hour = getRandom(0, 23)
+        const time = getRandom(0, 59)
+        const day = getRandom(10, 28)
+        const month = getRandom(9, 12)
+
+        return `час: ${(hour < 10) ? `0${hour}` : hour}:${(time < 10) ? `0${time}` : time} 
+                дата:${(day < 10) ? `0${day}` : day}.${(month < 10) ? `0${month}` : month}.2021`
     }
+
     return {
         title: title,
         photoUrl: `./../photos/${photo}_photo.png`,
-        data: generateData(),
+        data: (data) ? data : generateData(),
         trainer: trainer
     }
 }
