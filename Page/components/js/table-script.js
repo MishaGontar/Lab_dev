@@ -7,12 +7,15 @@ const lesson = (title, photo, data, trainer) => {
     }
 }
 
+// Буде винесено в БД
 const lessons = [
     lesson('Баскетбол', 'basketball', "17:00 (08.09.2021)", "Traktor I.V."),
     lesson('Плавання', 'swimming', "14:20 (08.09.2021)", "Traktor I.V."),
     lesson('Волейбол', 'volleyball', "13:10 (08.09.2021)", "Traktor I.V.")
 ]
+
 const table = document.getElementById('table')
+
 for (let i of lessons) {
     table.innerHTML +=
         `<tr>
