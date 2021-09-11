@@ -3,15 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>About</title>
-    <link rel="stylesheet" href="./../Home/HomeCSS.css">
 </head>
 <body>
-<header class="header">
-    <span><img alt="..." class="homeImg" src="../photos/pngwing.com.png"
-               onclick="window.location.href='./../Home/Home.html'"></span>
-    <span class="spanHeader"><a href="About.html">Про проект</a></span>
-</header>
-<hr>
+<?php include_once './../views_models/header.php'?>
 <div align="center">
     <h1 class="hText">Про проект</h1>
     <div class="text">

@@ -3,17 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <link rel="stylesheet" href="HomeCSS.css">
-
 </head>
 <body>
-<header class="header">
-    <span><img alt="..." class="homeImg" src="../photos/pngwing.com.png" onclick="window.location.href='./../Home/Home.html'"></span>
-    <span class="spanHeader"><a href="./../About/About.html">Про проект</a></span>
-</header>
-
+<?php include_once './../views_models/header.php'?>
 <div align="center">
-    <hr>
     <div><h1 class="hText">Спорткомплекс ....</h1></div>
     <div>
         <h2>Всі заняття:</h2>
